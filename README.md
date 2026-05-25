@@ -84,6 +84,14 @@ Run these files in MySQL:
 ---
 
 ### 2. Install Dependencies / نصب پیش‌نیازها
+---
+
+### 3. Run Application / اجرای برنامه
+python app.py
+---
+
+### 4. Open in Browser / باز کردن در مرورگر
+http://127.0.0.1:5000
 
 ```bash id="dep01"
 pip install flask mysql-connector-python
