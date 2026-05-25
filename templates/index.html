@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel System</title>
+</head>
+<body>
+
+<h1>Hotel Reservation System</h1>
+
+<h2>Reservations</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Customer</th>
+        <th>Room</th>
+        <th>Check In</th>
+        <th>Check Out</th>
+    </tr>
+
+    {% for r in reservations %}
+    <tr>
+        <td>{{ r[0] }}</td>
+        <td>{{ r[1] }}</td>
+        <td>{{ r[2] }}</td>
+        <td>{{ r[3] }}</td>
+        <td>{{ r[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<hr>
+
+<h2>Add Customer</h2>
+<form method="POST" action="/add_customer">
+    <input name="name" placeholder="Name">
+    <input name="phone" placeholder="Phone">
+    <input name="email" placeholder="Email">
+    <button type="submit">Add</button>
+</form>
+
+<hr>
+
+<h2>Add Reservation</h2>
+<form method="POST" action="/add_reservation">
+    <input name="customer_id" placeholder="Customer ID">
+    <input name="room_id" placeholder="Room ID">
+    <input name="check_in" type="date">
+    <input name="check_out" type="date">
+    <button type="submit">Book</button>
+</form>
+
+</body>
+</html>
