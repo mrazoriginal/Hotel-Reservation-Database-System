@@ -1,6 +1,5 @@
 -- =========================
 -- Hotel Reservation System
--- Schema (MySQL)
 -- =========================
 
 CREATE DATABASE IF NOT EXISTS hotel_db;
