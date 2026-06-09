@@ -1,4 +1,4 @@
--demo: https://youtu.be/CVGKbdJrCKo
+- Watch a demo here: https://youtu.be/CVGKbdJrCKo
 
 # 🏨 Hotel Reservation Database System / سیستم پایگاه داده رزرو هتل
 
